@@ -4,8 +4,11 @@
 
 setwd("C:/Users/.../coursera/cleaning data project/UCI HAR Dataset")
 
-##Read the test.txt files and related txt files into data tables
+##clean up working space and load library
+rm(list = ls(all = TRUE))
 library(data.table)
+
+##Read the test.txt files and related txt files into data tables
 test <- read.table("./test/X_test.txt")
 subjecttest <- read.table("./test/subject_test.txt")
 activitytest <-read.table("./test/y_test.txt")
